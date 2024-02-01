@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>User List</title>
+    </head>
+    <body>
+    <h1>Users:</h1>
+    <table>
+        <tr> <!-- Создание заголовочной строки, указываем ее значение-->
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <!-- Создали шапку таблицы -->
+        </tr>
+        <tr th:each="user: ${users}">
+        <!-- th:each = повтори эту строку столько раз, сколько есть пользователей (аналог foreach)-->
+            <td th:text="${user.id}"></td> <!-- Создание строки с данными -->
+            <td><a th:href="@{/users/{id}(id=${user.id})}" th:text="${user.name}"></a></td> <!-- То, что находится внутри тега а = является ссылкой -->
+            <!-- th:href = ссылка, по которой нужно перейти -->
+            <td th:text="${user.email}"></td>
+        </tr>
+    </table>
+    </body>
+</html>

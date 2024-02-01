@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>User Profile</title>
+    </head>
+    <body>
+        <h1 th:text="${user.name}"></h1>
+    <!-- th = шаблонизатор thymeleaf, говорим, что хотим подставить текст в заголовок h1-->
+    <!-- используя переменную user.name-->
+    <p>ID: <span th:text="${user.id}"></span></p>
+    <!-- тег span нужен для того, чтобы отображать изолированные участки текста-->
+    <p>Email: <span th:text="${user.email}"></span></p>
+    </body>
+</html>
