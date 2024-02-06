@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Простая форма</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Результат</h1>
+        <p th:text="'id: ' + ${greeting.id}"/>
+        <p th:text="'content: ' + ${greeting.content}"/>
+        <a href="/greeting">Отправить новое сообщение</a>
+</body>
+</html>

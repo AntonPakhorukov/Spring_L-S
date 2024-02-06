@@ -1,0 +1,4 @@
+FROM postgres:13.2-alpine
+ENV POSTGRES_DB seminar_05
+ENV POSTGRES_USER user
+ENV POSTGRES_PASSWORD password
