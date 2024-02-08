@@ -6,8 +6,8 @@
 </head>
 <body>
     <h1>Результат</h1>
-        <p th:text="'id: ' + ${greeting.id}"/>
-        <p th:text="'content: ' + ${greeting.content}"/>
-        <a href="/greeting">Отправить новое сообщение</a>
+        <p th:text="'id: ' + ${greeting.id}"/> <!--Вывод на странице id и значения из поля id страницы greeting-->
+        <p th:text="'content: ' + ${greeting.content}"/> <!--Вывод на странице content и значения из поля content страницы greeting-->
+        <a href="/greeting">Отправить новое сообщение</a> <!--Ссылка на предыдущую страницу-->
 </body>
 </html>

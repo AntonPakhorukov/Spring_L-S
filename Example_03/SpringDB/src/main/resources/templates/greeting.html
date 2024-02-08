@@ -7,9 +7,13 @@
 <body>
     <h1>Простая форма</h1>
     <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
-        <p>Id: <input type="text" th:field="*{id}" /></p>
+        <!--В форме происходит действие = формируется объект greeting и метод post-->
+        <p>Id: <input type="number" th:field="*{id}" /></p>
+        <!--номер id введется в поле id, !!! number - ограничит ввод числом-->
         <p>Сообщение: <input type="text" th:field="*{content}" /></p>
+        <!--текст content введется в поле content !!! text позволяет вводить что угодно-->
         <p><input type="submit" value="Отправить" /> <input type="reset" value="Сбросить" /></p>
+        <!--Кнопка отправить и кнопка сбросить-->
     </form>
 </body>
 </html>
