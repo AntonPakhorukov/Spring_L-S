@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+<form action="/login", method="post"> <!--Снова создаем форму, будет вести нас на страницу login, метод post-->
+    <div> <!--Создаем т3 блока-->
+        <label>UserName: <input type="text" name="username"></label> <!--Создаем поле для ввода логина, input - поле для ввода логина-->
+<!--в атрибуте указываем тип ввода = текст, и указываем name - используется для передачи информации в наш сервис-->
+    </div>
+    <div>
+        <label>Password: <input type="password" name="password"></label> <!--тип меняем на password, чтобы при вводе были "*"-->
+    </div>
+    <div>
+        <button type="submit">Login</button> <!--Создаем кнопку логирования-->
+    </div>
+</form>
+</body>
+</html>
